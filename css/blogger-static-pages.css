@@ -1,0 +1,8 @@
+/*
+ * Blogger static-page visibility rules
+ * Source: inline styles #2 and #3. Keep inline because Blogger uses page/widget conditions around these styles.
+ * Extracted for review only on 2026-11-19T03:03:59.239Z. Not loaded by the Blogger theme yet.
+ */
+
+main>section:not(.blog-source){display:none!important}main>.blog-source{display:none!important}
+main{display:none!important}

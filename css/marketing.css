@@ -1,0 +1,64 @@
+/*
+ * Marketing design rules — dependency reference
+ * Extracted rule inventory from the core application. Depends on admin.css and must not be loaded separately until the main closure is modularized.
+ * Extracted for review only on 2026-11-19T03:03:59.251Z. Not loaded by the Blogger theme yet.
+ */
+
+.fta-marketing-nav-wrap{margin:3px 0}
+.fta-marketing-nav-toggle{justify-content:space-between}
+.fta-marketing-nav-toggle .fta-nav-main{display:flex;align-items:center;gap:11px}
+.fta-marketing-caret{margin-left:auto;font-size:13px;transition:transform .18s ease}
+.fta-marketing-nav-wrap.open .fta-marketing-caret{transform:rotate(180deg)}
+.fta-marketing-subnav{display:none;margin:4px 0 7px 16px;padding:7px 0 7px 11px;border-left:1px solid rgba(255,255,255,.14)}
+.fta-marketing-nav-wrap.open .fta-marketing-subnav{display:grid;gap:2px}
+.fta-marketing-subnav button{border:0;background:transparent;color:#adb7c4;padding:8px 10px;border-radius:8px;text-align:left;font:650 11px inherit;cursor:pointer}
+.fta-marketing-subnav button:hover,.fta-marketing-subnav button.active{background:rgba(255,255,255,.09);color:#fff}
+.fta-marketing-subnav button.active{color:#ffb49a}
+.fta-marketing-hero{position:relative;overflow:hidden;display:flex;justify-content:space-between;gap:18px;padding:24px;border:1px solid #d9e5f3;border-radius:18px;margin-bottom:17px;background:radial-gradient(circle at 94% 8%,rgba(255,126,70,.18),transparent 25%),linear-gradient(124deg,#102e60,#1859a7);color:#fff}
+.fta-marketing-hero:after{content:"";position:absolute;right:-42px;bottom:-72px;width:210px;height:210px;border:1px solid rgba(255,255,255,.16);border-radius:50%}
+.fta-marketing-hero>*{position:relative;z-index:1}
+.fta-marketing-kicker{font-size:10px;font-weight:900;letter-spacing:1.2px;text-transform:uppercase;color:#f7c4aa}
+.fta-marketing-hero h2{margin:6px 0;font-size:24px;letter-spacing:-.5px}
+.fta-marketing-hero p{margin:0;max-width:630px;color:#dce9fc;font-size:12px;line-height:1.6}
+.fta-marketing-tabs{display:flex;gap:7px;overflow:auto;margin:0 0 16px;padding:4px;border:1px solid #e1e8f0;border-radius:12px;background:#fff}
+.fta-marketing-tab{border:0;border-radius:8px;background:transparent;color:#69778a;padding:9px 11px;font:700 11px inherit;white-space:nowrap;cursor:pointer}
+.fta-marketing-tab.active{background:#153d72;color:#fff;box-shadow:0 5px 12px rgba(21,61,114,.18)}
+.fta-marketing-tab.fta-submenu-managed{display:none!important}
+.fta-marketing-tabs.fta-marketing-tools{gap:8px;padding:9px 10px;margin-bottom:18px;background:linear-gradient(135deg,#fff,#f7faff);box-shadow:0 7px 18px rgba(25,47,80,.05)}
+.fta-marketing-tabs.fta-marketing-tools:before{content:"More marketing tools";display:flex;align-items:center;padding:0 7px;color:#7c8ca1;font-size:10px;font-weight:850;letter-spacing:.4px;white-space:nowrap}
+.fta-marketing-tabs.fta-marketing-tools .fta-marketing-tab{border:1px solid #dce6f1;background:#fff;color:#294867;padding:9px 12px;box-shadow:0 3px 8px rgba(22,50,82,.04)}
+.fta-marketing-tabs.fta-marketing-tools .fta-marketing-tab:hover{border-color:#9ab6d7;background:#f3f8ff}
+.fta-marketing-tabs.fta-marketing-tools .fta-marketing-tab.active{background:#153d72;border-color:#153d72;color:#fff}
+.fta-marketing-body{min-height:220px}
+.fta-marketing-status{display:inline-flex;align-items:center;gap:6px;padding:5px 9px;border-radius:99px;background:#edf8f2;color:#16794a;font-size:10px;font-weight:850}
+.fta-marketing-status.off{background:#f1f4f7;color:#66758a}
+.fta-marketing-status.warn{background:#fff6df;color:#946700}
+.fta-marketing-activity{display:grid;gap:0}
+.fta-marketing-activity-row{display:flex;align-items:flex-start;gap:10px;padding:12px 0;border-bottom:1px solid #edf1f5}
+.fta-marketing-activity-row:last-child{border-bottom:0}
+.fta-marketing-activity-icon{display:grid;place-items:center;width:28px;height:28px;border-radius:9px;background:#fff0e9;color:#d94d18;font-size:13px;flex:0 0 auto}
+.fta-marketing-activity-row b{font-size:12px;color:#24354b}
+.fta-marketing-activity-row small{display:block;color:#76859a;font-size:10px;margin-top:3px}
+.fta-marketing-link{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:10px;border-radius:8px;background:#f7f9fc;border:1px solid #edf1f5;color:#335578;font-size:11px;text-decoration:none}
+.fta-marketing-hero{padding:19px;flex-direction:column}
+.fta-marketing-tabs{margin-left:-2px;margin-right:-2px}
+.fta-marketing-tabs.fta-marketing-tools:before{display:none}
+.fta-marketing-performance{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:16px}
+.fta-marketing-performance-card{position:relative;overflow:hidden;padding:18px;border:1px solid #dde7f3;border-radius:15px;background:linear-gradient(145deg,#fff,#f7faff);box-shadow:0 10px 24px rgba(20,45,82,.055)}
+.fta-marketing-performance-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:#235da6}
+.fta-marketing-performance-card:nth-child(2):before{background:#1b9b66}
+.fta-marketing-performance-card:nth-child(3):before{background:#e87532}
+.fta-marketing-performance-card:nth-child(4):before{background:#7867bd}
+.fta-marketing-performance-label{font-size:10px;font-weight:850;letter-spacing:.75px;text-transform:uppercase;color:#71829a}
+.fta-marketing-performance-value{margin:9px 0 5px;font-size:26px;font-weight:900;letter-spacing:-.7px;color:#162c4c}
+.fta-marketing-performance-note{font-size:10px;line-height:1.45;color:#78889b}
+.fta-marketing-performance{grid-template-columns:repeat(2,minmax(0,1fr))}
+.fta-marketing-performance{grid-template-columns:1fr}
+.fta-marketing-tab",t).forEach((function(t){t.classList.toggle("active",t===e)}
+.fta-marketing-tab",t).forEach((function(t){t.classList.toggle("active",t===e)}
+.fta-marketing-tab",t).forEach((function(t){t.classList.toggle("active",t===e)}
+.fta-marketing-tab",t).forEach((function(t){t.classList.toggle("active",t===e)}
+.fta-marketing-tab",t).forEach((function(t){t.classList.toggle("active",t===e)}
+.fta-marketing-tab",t).forEach((function(t){t.classList.toggle("active",t===e)}
+.fta-marketing-tab",t).forEach((function(t){t.classList.toggle("active",t===e)}
+.fta-marketing-tab",t).forEach((function(t){t.classList.toggle("active",t===e)}

@@ -1,0 +1,7 @@
+/*
+ * Category loading guard
+ * Source: inline style #1. Must remain inline until migration because it prevents category-page flicker before JavaScript runs.
+ * Extracted for review only on 2026-11-19T03:03:59.238Z. Not loaded by the Blogger theme yet.
+ */
+
+html.ft-category-pending main{visibility:hidden}

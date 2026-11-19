@@ -1,0 +1,9 @@
+# Never publish local/private configuration or credentials.
+.env
+.env.*
+*.pem
+*.key
+*service-account*.json
+*credentials*.json
+*secret*.json
+js/inline-config-not-exported.txt

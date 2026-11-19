@@ -1,0 +1,435 @@
+/*
+ * Admin design rules — dependency reference
+ * Extracted rule inventory from the core application. Do not load separately yet; the full live admin stylesheet is dynamically created by js/core-app.js.
+ * Extracted for review only on 2026-11-19T03:03:59.249Z. Not loaded by the Blogger theme yet.
+ */
+
+.fta-login-mode,.flowtrade-admin-page.fta-login-mode #staticPageShell,.flowtrade-admin-page.fta-login-mode #staticPageBody{height:100dvh;overflow:hidden!important}
+.fta-app,.flowtrade-admin-page .fta-main,.flowtrade-admin-page .fta-dash{width:100%!important;max-width:none!important;box-sizing:border-box}
+.fta-auth-gate{height:100dvh;min-height:100dvh;background:#f4f6f8;overflow:hidden;padding:16px;box-sizing:border-box;display:flex;align-items:center}
+.fta-auth-gate[hidden],.fta-protected-app[hidden]{display:none!important}
+.fta-app{--fta-ink:#172033;--fta-muted:#718096;--fta-orange:#ff5a1f;--fta-orange-soft:#fff0e9;--fta-line:#e7ebf1;min-height:100vh;display:flex;background:linear-gradient(135deg,#f7f9fc 0%,#f1f4f8 100%);color:var(--fta-ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+.fta-sidebar{transition:width .24s ease,transform .24s ease}
+.fta-sidebar:before{content:"";height:3px;display:block;background:linear-gradient(90deg,#ff5a1f,#ff9a62,#ff5a1f)}
+.fta-logo{padding-top:22px}
+.fta-nav-item{position:relative;letter-spacing:.05px}
+.fta-nav-item.active{box-shadow:0 12px 24px rgba(255,90,31,.18)}
+.fta-nav-item.active:after{content:"";position:absolute;right:9px;width:5px;height:5px;border-radius:50%;background:#fff}
+.fta-topbar{background:rgba(255,255,255,.94);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(20,32,51,.03)}
+.fta-top-actions{display:flex;align-items:center;gap:9px}
+.fta-global-search{display:flex;align-items:center;gap:8px;width:min(360px,32vw);height:38px;border:1px solid #e7ebf1;background:#f8fafc;border-radius:10px;padding:0 11px;color:#8793a4}
+.fta-global-search input{border:0;outline:0;background:transparent;width:100%;font:inherit;font-size:11px;color:#27313b}
+.fta-global-search:focus-within{border-color:#ffb094;box-shadow:0 0 0 3px rgba(255,90,31,.1);background:#fff}
+.fta-notice-dot{position:absolute;right:-1px;top:-1px;width:7px;height:7px;border-radius:50%;background:#ff5a1f;border:2px solid #fff}
+.fta-top-profile{display:flex;align-items:center;gap:8px;border:1px solid #e7ebf1;background:#fff;padding:4px 8px 4px 5px;border-radius:10px;cursor:pointer;font-size:11px;font-weight:800;color:#27313b}
+.fta-top-avatar{display:grid;place-items:center;width:27px;height:27px;border-radius:8px;background:linear-gradient(135deg,#173b66,#2b6bba);color:#fff;font-size:10px}
+.fta-menu-toggle{display:none}
+.fta-content,.fta-module{animation:ftaPageIn .2s ease both}
+.fta-card,.fta-module-card,.fta-mini-card,.fta-stat{box-shadow:0 10px 26px rgba(28,39,56,.035)!important;border-color:#e8ecf2!important}
+.fta-module-card:hover,.fta-mini-card:hover{box-shadow:0 14px 30px rgba(28,39,56,.06)!important}
+.fta-module-head h1{font-weight:850;color:#182438}
+.fta-module-btn.primary{box-shadow:0 9px 18px rgba(255,90,31,.2)}
+.fta-module-btn{transition:transform .15s ease,box-shadow .15s ease}
+.fta-module-btn:hover{transform:translateY(-1px);box-shadow:0 5px 12px rgba(23,32,51,.08)}
+.fta-module-table th{background:#f7f9fc!important;color:#718096!important}
+.fta-module-table tbody tr{transition:background .15s ease}
+.fta-module-table tbody tr:hover{background:#fffaf7}
+.fta-pill{border:1px solid rgba(23,32,51,.05)}
+.fta-empty-module{border:1px dashed #dbe2eb;border-radius:12px;background:#fbfcfe}
+.fta-mobile-overlay{display:none}
+.fta-sidebar{width:238px;flex:0 0 238px;background:#17191d;color:#fff;display:flex;flex-direction:column;min-height:100vh;box-shadow:8px 0 30px rgba(15,23,42,.08);position:sticky;top:0;height:100vh}
+.fta-logo{height:76px;display:flex;align-items:center;gap:11px;padding:0 20px;border-bottom:1px solid rgba(255,255,255,.08);box-sizing:border-box}
+.fta-logo-mark{width:38px;height:38px;border-radius:11px;background:#ff5a1f;display:grid;place-items:center;font-weight:900;font-size:17px;box-shadow:0 8px 20px rgba(255,90,31,.28)}
+.fta-logo-title{font-weight:800;letter-spacing:.1px;font-size:18px}
+.fta-logo-sub{font-size:10px;color:#8f98a3;margin-top:2px;letter-spacing:1.2px;text-transform:uppercase}
+.fta-nav{padding:18px 12px;flex:1;overflow:auto}
+.fta-nav-label{font-size:10px;color:#6f7782;font-weight:800;text-transform:uppercase;letter-spacing:1.2px;padding:0 11px 9px}
+.fta-nav-item{width:100%;display:flex;align-items:center;gap:11px;padding:11px 12px;margin:3px 0;border:0;border-radius:10px;background:transparent;color:#aeb6c0;text-align:left;font-size:13px;font-weight:650;cursor:pointer;box-sizing:border-box}
+.fta-nav-main{display:flex;align-items:center;gap:11px}
+.fta-nav-item:hover{background:rgba(255,255,255,.055);color:#fff}
+.fta-nav-item.active{background:#ff5a1f;color:#fff;box-shadow:0 8px 18px rgba(255,90,31,.2)}
+.fta-nav-item.logout-nav{margin-top:6px;color:#ffb0a0;background:rgba(255,90,31,.06);border:1px solid rgba(255,90,31,.12)}
+.fta-nav-item.logout-nav:hover{background:rgba(255,90,31,.14);color:#fff}
+.fta-nav-icon{width:20px;text-align:center;font-size:15px;opacity:.95}
+.fta-nav-badge{margin-left:auto;background:#fff;color:#ff5a1f;border-radius:999px;font-size:10px;font-weight:900;padding:2px 7px}
+.fta-sidebar-foot{padding:14px;border-top:1px solid rgba(255,255,255,.08)}
+.fta-admin-mini{display:flex;align-items:center;gap:10px;padding:9px;border-radius:11px;background:rgba(255,255,255,.045)}
+.fta-avatar{width:34px;height:34px;border-radius:50%;background:#2b3038;display:grid;place-items:center;color:#fff;font-weight:800;font-size:12px}
+.fta-mini-email{font-size:11px;color:#aeb6c0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:145px}
+.fta-main{flex:1;min-width:0}
+.fta-topbar{height:76px;background:#fff;border-bottom:1px solid #e7eaee;display:flex;align-items:center;justify-content:space-between;padding:0 28px;box-sizing:border-box;position:sticky;top:0;z-index:20}
+.fta-breadcrumb{font-size:12px;color:#8a929d}
+.fta-breadcrumb strong{color:#2b333d}
+.fta-top-actions{display:flex;align-items:center;gap:10px}
+.fta-icon-btn{width:38px;height:38px;border:1px solid #e4e8ec;background:#fff;border-radius:10px;display:grid;place-items:center;color:#59636f;cursor:pointer}
+.fta-icon-btn:hover{background:#f8fafb}
+.fta-content{padding:26px 28px 36px;max-width:1500px;margin:0 auto}
+.fta-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:22px}
+.fta-heading h1{margin:0;font-size:27px;line-height:1.2;letter-spacing:-.4px}
+.fta-heading p{margin:7px 0 0;color:#7b8591;font-size:13px}
+.fta-heading-actions{display:flex;gap:9px}
+.fta-btn{border:0;border-radius:10px;padding:10px 15px;font-weight:750;cursor:pointer;background:#ff5a1f;color:#fff;box-shadow:0 5px 14px rgba(255,90,31,.18);font-size:12px}
+.fta-btn:hover{filter:brightness(.97);transform:translateY(-1px)}
+.fta-btn.secondary{background:#fff;color:#27313b;border:1px solid #dfe4e9;box-shadow:none}
+.fta-btn.danger{background:#fff;color:#c24132;border:1px solid #f0d3cf;box-shadow:none}
+.fta-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-bottom:20px}
+.fta-stat{position:relative;overflow:hidden;background:#fff;border:1px solid #e7eaee;border-radius:14px;padding:18px 19px;box-shadow:0 3px 12px rgba(20,30,40,.025)}
+.fta-stat:after{content:"";position:absolute;right:-18px;top:-18px;width:72px;height:72px;border-radius:50%;background:#fff3ed}
+.fta-stat-head{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:1}
+.fta-stat .l{font-size:11px;color:#7b8591;font-weight:800;letter-spacing:.55px}
+.fta-stat-icon{width:32px;height:32px;border-radius:9px;background:#fff3ed;color:#ff5a1f;display:grid;place-items:center;font-size:14px}
+.fta-stat .n{font-size:28px;font-weight:850;margin-top:12px;letter-spacing:-.5px;position:relative;z-index:1}
+.fta-stat-foot{font-size:10px;color:#98a1ab;margin-top:5px;position:relative;z-index:1}
+.fta-toolbar{display:flex;gap:10px;align-items:center;background:#fff;border:1px solid #e7eaee;padding:12px;border-radius:14px;margin-bottom:13px;box-shadow:0 3px 12px rgba(20,30,40,.025)}
+.fta-search{position:relative;flex:1;min-width:240px}
+.fta-search span{position:absolute;left:13px;top:10px;color:#9aa3ad;font-size:14px}
+.fta-toolbar input,.fta-toolbar select{height:38px;padding:0 12px;border:1px solid #dfe4e9;border-radius:9px;background:#fff;color:#27313b;font-size:12px;outline:none;box-sizing:border-box}
+.fta-search input{width:100%;padding-left:36px}
+.fta-toolbar input:focus,.fta-toolbar select:focus{border-color:#ff9a76;box-shadow:0 0 0 3px rgba(255,90,31,.08)}
+.fta-table-wrap{width:100%;box-sizing:border-box;background:#fff;border:1px solid #e7eaee;border-radius:14px;overflow:auto;box-shadow:0 3px 12px rgba(20,30,40,.025)}
+.fta-table{width:100%;border-collapse:separate;border-spacing:0;min-width:980px}
+.fta-table th,.fta-table td{padding:14px 15px;border-bottom:1px solid #edf0f3;text-align:left;vertical-align:middle;font-size:12px}
+.fta-table th{font-size:10px;color:#8a939e;background:#fafbfc;text-transform:uppercase;letter-spacing:.65px;font-weight:800}
+.fta-table tbody tr:hover{background:#fcfdfd}
+.fta-table tbody tr:last-child td{border-bottom:0}
+.fta-order-id{font-weight:800;color:#26303a}
+.fta-customer-name{font-weight:700;color:#27313b}
+.fta-small{color:#8b949e;font-size:10px;line-height:1.55}
+.fta-payment{color:#56616d;font-size:11px}
+.fta-table select[data-fta-status]{height:30px;padding:0 9px;border:1px solid #dfe4e9;border-radius:8px;background:#fff;font-size:11px;font-weight:700;color:#46515d;cursor:pointer}
+.fta-table td:last-child{text-align:right}
+.fta-empty{padding:52px 30px;text-align:center;color:#8b949e}
+.fta-empty:before{content:"📦";display:block;font-size:26px;margin-bottom:8px;opacity:.7}
+.fta-statusbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 12px;padding:0 2px}
+.fta-statusbar-title{font-size:14px;font-weight:800}
+.fta-statusbar-sub{font-size:11px;color:#8b949e}
+.fta-msg{margin-top:12px;font-size:12px;min-height:18px}
+.fta-err{color:#b42318}
+.fta-ok{color:#16794a}
+.fta-refresh-spinner{display:inline-block;width:12px;height:12px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:ftaSpin .7s linear infinite;vertical-align:-2px;margin-right:6px}
+.fta-modal{position:fixed;inset:0;background:rgba(15,23,42,.52);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;padding:20px;z-index:99999;box-sizing:border-box}
+.fta-modal.open{display:flex}
+.fta-modal-card{background:#fff;width:665px;max-width:calc(100vw - 40px);height:710px;max-height:calc(100vh - 40px);overflow:auto;border-radius:14px;padding:0;box-shadow:0 20px 70px rgba(0,0,0,.22);min-width:0}
+.fta-modal{padding:12px}
+.fta-modal-card{width:min(665px,100%);height:calc(100vh - 24px);max-height:none;border-radius:14px}
+.fta-detail{grid-template-columns:1fr}
+.fta-box.full{grid-column:auto}
+.fta-modal-head{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:22px 26px;border-bottom:1px solid #e8ebef;position:sticky;top:0;background:#fff;z-index:3}
+.fta-modal-head h2{margin:0;font-size:21px;letter-spacing:-.2px}
+.fta-sub{color:#7b8591;font-size:11px;margin-top:5px}
+.fta-detail{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:22px 26px 30px;margin-top:0}
+.fta-box{border:1px solid #e7eaee;border-radius:14px;padding:16px;background:#fff;box-shadow:0 2px 10px rgba(20,30,40,.025)}
+.fta-box.full{grid-column:1/-1}
+.fta-box-title{font-size:12px;font-weight:850;color:#27313b;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.fta-items{width:100%;border-collapse:collapse}
+.fta-items th{font-size:10px;color:#8a939e;text-transform:uppercase;letter-spacing:.6px;text-align:left;padding:8px;border-bottom:1px solid #e7eaee}
+.fta-items td{padding:11px 8px;border-bottom:1px solid #edf0f3;font-size:12px}
+.fta-items tr:last-child td{border-bottom:0}
+.fta-item-title{font-weight:750;color:#27313b}
+.fta-item-price{font-weight:800;text-align:right}
+.fta-detail-total{display:flex;justify-content:space-between;align-items:center;padding-top:13px;margin-top:8px;border-top:1px solid #e7eaee;font-size:14px}
+.fta-detail-total b{font-size:18px}
+.fta-modal-status-row{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.fta-modal-status-label{font-size:10px;text-transform:uppercase;letter-spacing:.7px;color:#8a939e;font-weight:850}
+.fta-modal-status-row select{height:38px;border:1px solid #dfe4e9;border-radius:9px;padding:0 12px;font-weight:750;background:#fff}
+.fta-timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:20px;padding:0 4px}
+.fta-timeline-item{position:relative;text-align:center;color:#a1a9b2}
+.fta-timeline-item:before{content:;position:absolute;top:10px;left:50%;width:100%;height:2px;background:#e8ebef;z-index:0}
+.fta-timeline-item:last-child:before{display:none}
+.fta-timeline-dot{position:relative;z-index:1;display:block;width:20px;height:20px;margin:0 auto 8px;border-radius:50%;background:#fff;border:2px solid #d7dce2;box-sizing:border-box}
+.fta-timeline-item.done{color:#27313b}
+.fta-timeline-item.done .fta-timeline-dot{background:#ff5a1f;border-color:#ff5a1f;box-shadow:0 0 0 4px #fff1eb}
+.fta-timeline-title{font-size:11px;font-weight:800}
+.fta-timeline-note{font-size:9px;margin-top:3px;color:#98a1ab}
+.fta-detail-address{line-height:1.7;color:#59636f;font-size:12px}
+.fta-detail-label{font-size:10px;text-transform:uppercase;letter-spacing:.65px;color:#8a939e;font-weight:800}
+.fta-summary-row{display:flex;justify-content:space-between;gap:14px;margin:7px 0;font-size:12px;color:#59636f}
+.fta-summary-row.total{padding-top:10px;border-top:1px solid #e7eaee;color:#27313b;font-weight:800;font-size:14px}
+.fta-customer-name-large{font-size:15px;font-weight:850;color:#27313b;margin-bottom:5px}
+.fta-copy-btn{font-size:10px!important;padding:7px 10px!important}
+.fta-modal-close-x{font-size:18px;line-height:1}
+.fta-shipping-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fta-shipping-field{display:flex;flex-direction:column;gap:6px}
+.fta-shipping-field.full{grid-column:1/-1}
+.fta-shipping-field label{font-size:10px;text-transform:uppercase;letter-spacing:.65px;color:#8a939e;font-weight:800}
+.fta-shipping-field input,.fta-shipping-field select{height:38px;border:1px solid #dfe4e9;border-radius:9px;background:#fff;color:#27313b;padding:0 10px;font-size:12px;outline:none;box-sizing:border-box}
+.fta-shipping-field input:focus,.fta-shipping-field select:focus{border-color:#ff9a76;box-shadow:0 0 0 3px rgba(255,90,31,.08)}
+.fta-shipping-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:12px}
+.fta-shipping-current{font-size:11px;color:#69737e;line-height:1.6;margin-top:8px}
+.fta-shipping-badge{display:inline-flex;padding:5px 8px;border-radius:999px;background:#f1f4f7;color:#52606d;font-size:10px;font-weight:800}
+.fta-login{width:min(440px,calc(100% - 32px));margin:10vh auto;background:#fff;padding:30px;border:1px solid #e4e8ec;border-radius:18px;box-shadow:0 20px 55px rgba(25,35,45,.1);box-sizing:border-box}
+.fta-login h1{font-size:25px;margin:0;color:#1d252e}
+.fta-login .fta-login-brand{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.fta-login .fta-logo-mark{width:40px;height:40px;color:#fff}
+.fta-login .fta-field{margin-top:14px}
+.fta-login .fta-field label{display:block;font-size:12px;font-weight:750;margin-bottom:6px;color:#47515d}
+.fta-login .fta-field input{width:100%;height:43px;padding:0 12px;border:1px solid #dfe4e9;border-radius:9px;font-size:13px;box-sizing:border-box;outline:none}
+.fta-login .fta-field input:focus{border-color:#ff9a76;box-shadow:0 0 0 3px rgba(255,90,31,.08)}
+.fta-login-divider{display:flex;align-items:center;gap:9px;margin:16px 0;color:#a0a8b1;font-size:10px}
+.fta-login-divider:before,.fta-login-divider:after{content:"";height:1px;background:#edf0f3;flex:1}
+.fta-tabs{display:flex;gap:8px;overflow:auto;padding:4px;margin:0 0 14px;background:#fff;border:1px solid #e7eaee;border-radius:14px;box-shadow:0 3px 12px rgba(20,30,40,.025)}
+.fta-tab{border:0;background:transparent;color:#69737e;font-size:11px;font-weight:800;padding:10px 13px;border-radius:9px;white-space:nowrap;cursor:pointer}
+.fta-tab:hover{background:#f6f7f8;color:#27313b}
+.fta-tab.active{background:#fff1eb;color:#e84f18}
+.fta-tab .count{display:inline-flex;min-width:18px;height:18px;padding:0 5px;align-items:center;justify-content:center;border-radius:999px;background:#eef1f4;color:#69737e;margin-left:5px;font-size:9px}
+.fta-tab.active .count{background:#ff5a1f;color:#fff}
+.fta-order-status{display:inline-flex;align-items:center;gap:6px;padding:5px 8px;border-radius:999px;font-size:10px;font-weight:800;line-height:1}
+.fta-order-status:before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.fta-status-pending{background:#fff7df;color:#a06b00}
+.fta-status-processing{background:#eef4ff;color:#3867b1}
+.fta-status-shipped{background:#f1edff;color:#6851a8}
+.fta-status-delivered{background:#eaf8f0;color:#21824d}
+.fta-status-cancelled{background:#fff0f0;color:#b94040}
+.fta-order-number{font-weight:850;color:#27313b;letter-spacing:.1px}
+.fta-row-meta{display:block;margin-top:4px}
+.fta-modal-status-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.fta-modal-status-label{font-size:10px;text-transform:uppercase;letter-spacing:.7px;color:#8a939e;font-weight:800}
+.fta-modal-status-row select{height:36px;border:1px solid #dfe4e9;border-radius:9px;background:#fff;padding:0 10px;font-size:12px;font-weight:750;color:#27313b}
+.fta-timeline{margin-top:14px;position:relative;padding-left:22px}
+.fta-timeline:before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:2px;background:#e7eaee}
+.fta-timeline-item{position:relative;padding:0 0 14px}
+.fta-timeline-item:last-child{padding-bottom:0}
+.fta-timeline-dot{position:absolute;left:-20px;top:3px;width:10px;height:10px;border-radius:50%;background:#d8dde2;border:2px solid #fff;box-shadow:0 0 0 1px #d8dde2}
+.fta-timeline-item.done .fta-timeline-dot{background:#ff5a1f;box-shadow:0 0 0 1px #ffb79d}
+.fta-timeline-title{font-size:11px;font-weight:800;color:#35404a}
+.fta-timeline-note{font-size:10px;color:#8a939e;margin-top:2px}
+.fta-items .fta-item-title{font-weight:750;color:#27313b}
+.fta-items .fta-item-price{text-align:right;font-weight:800;white-space:nowrap}
+.fta-detail-total{margin-top:12px;padding-top:12px;border-top:1px solid #edf0f3;display:flex;justify-content:flex-end;font-size:15px}
+.fta-detail-total b{margin-left:7px}
+.fta-filter-note{font-size:10px;color:#8a939e;margin-left:auto;white-space:nowrap}
+.fta-sidebar{width:205px;flex-basis:205px}
+.fta-content{padding:22px 18px}
+.fta-topbar{padding:0 18px}
+.fta-cards{grid-template-columns:1fr 1fr}
+.fta-sidebar{display:none}
+.fta-topbar{height:64px}
+.fta-content{padding:18px 12px}
+.fta-heading{align-items:flex-start;flex-direction:column}
+.fta-heading-actions{width:100%}
+.fta-heading-actions .fta-btn{flex:1}
+.fta-cards{grid-template-columns:1fr 1fr;gap:10px}
+.fta-stat{padding:14px}
+.fta-toolbar{align-items:stretch;flex-direction:column}
+.fta-search{min-width:0}
+.fta-toolbar select{width:100%}
+.fta-module{padding:26px 28px 36px;max-width:1500px;margin:0 auto}
+.fta-module-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:20px}
+.fta-module-head h1{margin:0;font-size:27px;letter-spacing:-.4px}
+.fta-module-head p{margin:7px 0 0;color:#7b8591;font-size:13px}
+.fta-module-actions{display:flex;gap:9px;flex-wrap:wrap}
+.fta-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-bottom:18px}
+.fta-mini-card{background:#fff;border:1px solid #e7eaee;border-radius:14px;padding:16px;box-shadow:0 3px 12px rgba(20,30,40,.025)}
+.fta-mini-label{font-size:10px;color:#7b8591;font-weight:800;letter-spacing:.55px;text-transform:uppercase}
+.fta-mini-value{font-size:24px;font-weight:850;margin-top:8px;color:#202a33}
+.fta-mini-note{font-size:10px;color:#98a1ab;margin-top:4px}
+.fta-module-card{background:#fff;border:1px solid #e7eaee;border-radius:14px;padding:18px;box-shadow:0 3px 12px rgba(20,30,40,.025);margin-bottom:15px}
+.fta-module-card h3{margin:0 0 4px;font-size:14px}
+.fta-module-card .sub{color:#8b949e;font-size:11px}
+.fta-module-table{width:100%;border-collapse:collapse;margin-top:12px}
+.fta-module-table th,.fta-module-table td{padding:12px 10px;border-bottom:1px solid #edf0f3;text-align:left;font-size:11px;vertical-align:middle}
+.fta-module-table th{font-size:9px;color:#8a939e;text-transform:uppercase;letter-spacing:.6px;background:#fafbfc}
+.fta-module-table tr:last-child td{border-bottom:0}
+.fta-module-table .right{text-align:right}
+.fta-pill{display:inline-flex;padding:5px 8px;border-radius:999px;font-size:9px;font-weight:800;background:#f1f4f7;color:#52606d}
+.fta-module-search{width:100%;height:40px;border:1px solid #dfe4e9;border-radius:9px;padding:0 12px;box-sizing:border-box;outline:none;font-size:12px}
+.fta-module-search:focus{border-color:#ff9a76;box-shadow:0 0 0 3px rgba(255,90,31,.08)}
+.fta-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.fta-form-field{display:flex;flex-direction:column;gap:6px}
+.fta-form-field.full{grid-column:1/-1}
+.fta-form-field label{font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:#8a939e;font-weight:800}
+.fta-form-field input,.fta-form-field select{height:39px;border:1px solid #dfe4e9;border-radius:9px;padding:0 10px;font-size:12px;box-sizing:border-box;background:#fff;outline:none}
+.fta-form-field input:focus,.fta-form-field select:focus{border-color:#ff9a76;box-shadow:0 0 0 3px rgba(255,90,31,.08)}
+.fta-setting-row{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid #edf0f3}
+.fta-setting-row:last-child{border-bottom:0}
+.fta-setting-title{font-size:12px;font-weight:800;color:#27313b}
+.fta-setting-note{font-size:10px;color:#8b949e;margin-top:3px}
+.fta-chart{display:flex;align-items:flex-end;gap:10px;height:190px;padding:15px 5px 0}
+.fta-bar-wrap{flex:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:6px}
+.fta-bar{width:100%;max-width:48px;border-radius:7px 7px 2px 2px;background:#ff5a1f;min-height:3px}
+.fta-bar-label{font-size:9px;color:#8b949e}
+.fta-bar-value{font-size:9px;font-weight:800;color:#59636f}
+.fta-alert{padding:12px 14px;border-radius:10px;background:#fff7df;color:#8a6200;font-size:11px;line-height:1.5}
+.fta-success-box{padding:12px 14px;border-radius:10px;background:#eaf8f0;color:#16794a;font-size:11px;line-height:1.5}
+.fta-empty-module{padding:45px 20px;text-align:center;color:#8b949e}
+.fta-kpi-accent{color:#ff5a1f}
+.fta-module-btn{border:1px solid #dfe4e9;border-radius:9px;background:#fff;color:#27313b;padding:9px 12px;font-size:11px;font-weight:750;cursor:pointer}
+.fta-module-btn.primary{background:#ff5a1f;border-color:#ff5a1f;color:#fff}
+.fta-module-btn:hover{filter:brightness(.98)}
+.fta-cards{grid-template-columns:1fr}
+.fta-heading h1{font-size:23px}
+.fta-table th,.fta-table td{padding:11px}
+.fta-login{margin:7vh auto}
+.fta-modal{padding:12px}
+.fta-modal-card{width:min(665px,100%);border-radius:14px;height:calc(100vh - 24px);max-height:none}
+.fta-detail{grid-template-columns:1fr;padding:18px}
+.fta-box.full{grid-column:auto}
+.fta-timeline{grid-template-columns:1fr 1fr;row-gap:18px}
+.fta-timeline-item:before{display:none}
+.fta-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+.fta-auth-boot{position:fixed;inset:0;z-index:99999;background:rgba(246,248,251,.98);display:flex;align-items:center;justify-content:center;font-family:inherit}
+.fta-auth-boot-card{display:flex;align-items:center;gap:12px;padding:16px 20px;border:1px solid #e5e7eb;border-radius:12px;background:#fff;box-shadow:0 10px 30px rgba(15,23,42,.10);font-size:14px;font-weight:600;color:#334155}
+.fta-auth-spinner{width:18px;height:18px;border:2px solid #e5e7eb;border-top-color:#ff5a1f;border-radius:50%;animation:ftaAuthSpin .7s linear infinite}
+.fta-auth-gate{background:linear-gradient(135deg,#eff5ff 0%,#f8fafc 48%,#fff4ed 100%)}
+.fta-login{width:min(1060px,calc(100% - 36px));height:min(560px,calc(100dvh - 32px));min-height:0;margin:0 auto;display:grid;grid-template-columns:1.12fr .88fr;padding:0;border:0;overflow:hidden;border-radius:22px;box-shadow:0 28px 70px rgba(13,43,91,.16);background:#fff}
+.fta-login-promo{position:relative;overflow:hidden;padding:52px 54px;background:linear-gradient(135deg,#07306c,#0c5fc5);color:#fff}
+.fta-login-promo:before{content:"";position:absolute;width:380px;height:380px;border-radius:50%;right:-165px;bottom:-180px;background:rgba(255,126,45,.95)}
+.fta-login-promo:after{content:"";position:absolute;width:220px;height:220px;border:1px solid rgba(255,255,255,.18);border-radius:50%;left:-105px;top:-112px}
+.fta-login-promo>*{position:relative;z-index:1}
+.fta-login-kicker{font-size:11px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;color:#ffccae;margin-bottom:16px}
+.fta-login-promo h2{margin:0;max-width:390px;font-size:40px;line-height:1.1;letter-spacing:-1.1px}
+.fta-login-promo p{max-width:365px;margin:18px 0 28px;color:#dceaff;font-size:14px;line-height:1.65}
+.fta-login-benefits{display:grid;gap:12px}
+.fta-login-benefit{display:flex;align-items:center;gap:12px;padding:12px 13px;border:1px solid rgba(255,255,255,.16);border-radius:12px;background:rgba(255,255,255,.08);font-size:12px;font-weight:700}
+.fta-login-benefit b{display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:#ff5a1f;font-size:16px}
+.fta-login-form{padding:42px 46px;display:flex;flex-direction:column;justify-content:center}
+.fta-login .fta-login-brand{gap:13px;margin-bottom:22px}
+.fta-login .fta-login-brand h1{font-size:27px}
+.fta-login-logo{display:none;width:145px;height:46px;object-fit:contain;object-position:left center;margin-bottom:16px}
+.fta-login .fta-logo-mark{background:#ff5a1f;box-shadow:0 10px 22px rgba(255,90,31,.28)}
+.fta-login .fta-field input{background:#f7faff;border-color:#d8e3f1}
+.fta-login .fta-btn{background:#ff5a1f;box-shadow:0 8px 18px rgba(255,90,31,.24)}
+.fta-login .fta-btn.secondary{background:#fff;color:#123267;border-color:#cbd9eb;box-shadow:none}
+.fta-login-note{font-size:11px;line-height:1.55;color:#7b8591;text-align:center;margin:14px 0 0}
+.fta-login-note b{color:#0c4da2}
+.fta-login{width:min(460px,calc(100% - 24px));height:auto;min-height:0;margin:0 auto;display:block}
+.fta-login-promo{padding:30px 28px}
+.fta-login-promo h2{font-size:27px}
+.fta-login-promo p{margin:12px 0 18px}
+.fta-login-benefits{grid-template-columns:repeat(3,1fr);gap:7px}
+.fta-login-benefit{padding:8px;justify-content:center;font-size:0}
+.fta-login-benefit b{width:30px;height:30px}
+.fta-login-form{padding:32px 28px}
+.fta-login-logo{height:38px;margin-bottom:14px}
+.fta-phase2-hero{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding:23px 24px;border:1px solid #dfe8f4;border-radius:18px;background:radial-gradient(circle at 92% 0%,#fff1e9 0,rgba(255,241,233,0) 30%),linear-gradient(115deg,#fff 0%,#f6f9fd 100%);margin-bottom:18px}
+.fta-phase2-eyebrow{font-size:10px;font-weight:900;letter-spacing:1.1px;color:#ff5a1f;text-transform:uppercase}
+.fta-phase2-hero h2{margin:6px 0 6px;font-size:24px;letter-spacing:-.5px;color:#172b4d}
+.fta-phase2-hero p{margin:0;color:#66758a;font-size:12px;line-height:1.6;max-width:610px}
+.fta-insight-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;margin-bottom:17px}
+.fta-status-stack{display:grid;gap:11px;margin-top:16px}
+.fta-status-line{display:grid;grid-template-columns:96px 1fr 38px;align-items:center;gap:9px;font-size:11px;font-weight:750;color:#445168}
+.fta-status-track{height:8px;background:#edf2f7;border-radius:99px;overflow:hidden}
+.fta-status-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,#ff8b5e,#ff5a1f)}
+.fta-status-fill.green{background:linear-gradient(90deg,#46b982,#1d8f5b)}
+.fta-status-fill.blue{background:linear-gradient(90deg,#5186e5,#245bb6)}
+.fta-status-fill.gray{background:linear-gradient(90deg,#a9b4c1,#78879a)}
+.fta-section-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:4px}
+.fta-section-title h3{margin:0;font-size:15px;color:#1b2a40}
+.fta-section-title a{font-size:11px;font-weight:800;color:#e84e18;cursor:pointer}
+.fta-quick-actions{display:grid;gap:9px;margin-top:15px}
+.fta-quick-action{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:11px 12px;border:1px solid #e3eaf3;border-radius:11px;background:#fff;color:#233046;cursor:pointer;text-align:left;font:inherit}
+.fta-quick-action:hover{border-color:#ffb79e;background:#fffaf7}
+.fta-quick-action b{font-size:12px}
+.fta-quick-action span{font-size:10px;color:#77869a}
+.fta-customer-cell{display:flex;align-items:center;gap:10px}
+.fta-customer-avatar{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,#153b68,#2e76c9);color:#fff;font-size:11px;font-weight:900;flex:0 0 auto}
+.fta-customer-meta b{display:block;font-size:12px;color:#1e2e43}
+.fta-customer-meta small{display:block;max-width:210px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#79879a;font-size:10px;margin-top:3px}
+.fta-count-badge{display:inline-grid;place-items:center;min-width:25px;height:23px;padding:0 6px;border-radius:8px;background:#eff5ff;color:#255b9c;font-size:10px;font-weight:900}
+.fta-value-strong{font-weight:850;color:#1c2d43}
+.fta-muted-action{border:0;background:transparent;color:#df4b1d;font-weight:800;font-size:11px;cursor:pointer;padding:4px}
+.fta-orders-kicker{display:flex;align-items:center;gap:8px;font-size:11px;color:#6e7d91;font-weight:700}
+.fta-orders-kicker:before{content:"";width:7px;height:7px;border-radius:50%;background:#26a269;box-shadow:0 0 0 4px rgba(38,162,105,.12)}
+.fta-insight-grid{grid-template-columns:1fr}
+.fta-phase2-hero{padding:18px}
+.fta-status-line{grid-template-columns:82px 1fr 32px}
+.fta-ops-hero{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;padding:22px 24px;border:1px solid #dbe6f2;border-radius:18px;margin-bottom:18px;background:linear-gradient(118deg,#fff,#f6f9fd 64%,#fff4ed)}
+.fta-ops-eyebrow{font-size:10px;font-weight:900;letter-spacing:1.15px;color:#e8501b;text-transform:uppercase}
+.fta-ops-hero h2{margin:5px 0;font-size:23px;letter-spacing:-.45px;color:#182a42}
+.fta-ops-hero p{max-width:660px;margin:0;color:#6e7d91;font-size:12px;line-height:1.65}
+.fta-ops-note{display:flex;align-items:flex-start;gap:10px;padding:13px 14px;border:1px solid #dce8fa;border-radius:11px;background:#f5f9ff;color:#47607f;font-size:11px;line-height:1.55}
+.fta-ops-note b{color:#1d4f91}
+.fta-ops-list{display:grid;gap:0}
+.fta-ops-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0;border-bottom:1px solid #edf1f5}
+.fta-ops-row:last-child{border-bottom:0}
+.fta-ops-row b{font-size:12px;color:#23344a}
+.fta-ops-row span{font-size:11px;color:#728095}
+.fta-status-dot{width:9px;height:9px;border-radius:50%;background:#a3afbc;display:inline-block;margin-right:7px}
+.fta-status-dot.orange{background:#f2783e;box-shadow:0 0 0 4px rgba(242,120,62,.12)}
+.fta-status-dot.green{background:#22a06b;box-shadow:0 0 0 4px rgba(34,160,107,.12)}
+.fta-status-dot.blue{background:#3679d3;box-shadow:0 0 0 4px rgba(54,121,211,.12)}
+.fta-report-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fta-setting-group{margin-bottom:16px}
+.fta-setting-group-title{margin:0 0 4px;font-size:14px;color:#1e3048}
+.fta-setting-group-copy{margin:0 0 12px;color:#75849a;font-size:11px;line-height:1.55}
+.fta-ops-hero{padding:18px;flex-direction:column}
+.fta-report-grid{grid-template-columns:1fr}
+.fta-submenu-managed{display:none!important}
+.fta-integration-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.fta-integration-card{padding:16px;border:1px solid #e2e9f1;border-radius:13px;background:#fff}
+.fta-integration-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.fta-integration-icon{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:#eff5ff;color:#275d9f;font-weight:900;font-size:12px}
+.fta-score{font-size:26px;font-weight:900;color:#1f4e8a;letter-spacing:-.8px}
+.fta-score-note{font-size:10px;color:#78879a;margin-top:2px}
+.fta-integration-grid{grid-template-columns:1fr}
+.fta-social-platform-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+.fta-social-platform{padding:13px;border:1px solid #e1e8f0;border-radius:12px;background:#fff;cursor:pointer;text-align:left;color:#253650}
+.fta-social-platform:hover{border-color:#8aa8d3;background:#f8fbff}
+.fta-social-platform.active{border-color:#235da6;background:#eff5ff;box-shadow:0 0 0 3px rgba(35,93,166,.1)}
+.fta-social-platform b{display:block;font-size:11px}
+.fta-social-platform small{display:block;margin-top:4px;color:#76859a;font-size:9px}
+.fta-social-platform-icon{display:grid;place-items:center;width:28px;height:28px;border-radius:8px;margin-bottom:9px;background:#173f75;color:#fff;font-weight:900;font-size:10px}
+.fta-social-status{display:inline-flex;align-items:center;gap:5px;border-radius:99px;padding:4px 7px;font-size:9px;font-weight:850;background:#f1f4f7;color:#66758a}
+.fta-social-status.scheduled{background:#eaf2ff;color:#245b9b}
+.fta-social-status.manual{background:#fff5df;color:#8d6500}
+.fta-calendar-week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));border:1px solid #e4ebf2;border-radius:13px;overflow:hidden;background:#fff}
+.fta-calendar-day{min-height:126px;padding:9px;border-right:1px solid #e9eef4;border-bottom:1px solid #e9eef4}
+.fta-calendar-day:nth-child(7n){border-right:0}
+.fta-calendar-day-name{font-size:9px;font-weight:900;letter-spacing:.45px;text-transform:uppercase;color:#7c8a9c}
+.fta-calendar-day-date{font-size:16px;font-weight:900;color:#1b324e;margin:3px 0 8px}
+.fta-calendar-post{display:block;margin:4px 0;padding:5px 6px;border-radius:6px;background:#eff5ff;color:#295a9c;font-size:9px;font-weight:750;line-height:1.35;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fta-calendar-post.manual{background:#fff5df;color:#8d6500}
+.fta-preview-card{border:1px solid #e1e8f0;border-radius:13px;overflow:hidden;background:#fff}
+.fta-preview-head{padding:12px;border-bottom:1px solid #edf1f5;display:flex;align-items:center;gap:9px}
+.fta-preview-avatar{width:28px;height:28px;border-radius:9px;background:#193e73;color:#fff;display:grid;place-items:center;font-size:10px;font-weight:900}
+.fta-preview-body{padding:14px;white-space:pre-wrap;font-size:12px;line-height:1.6;color:#33465d;min-height:120px}
+.fta-preview-media{width:100%;aspect-ratio:16/9;object-fit:cover;background:#f3f6fa;border-top:1px solid #edf1f5}
+.fta-social-empty{padding:28px 16px;text-align:center;color:#79879a;font-size:11px;border:1px dashed #dce5ef;border-radius:10px;background:#fbfcfe}
+.fta-social-platform-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.fta-calendar-week{grid-template-columns:repeat(4,minmax(0,1fr))}
+.fta-calendar-day:nth-child(7n){border-right:1px solid #e9eef4}
+.fta-social-platform-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.fta-calendar-week{grid-template-columns:repeat(2,minmax(0,1fr))}
+.fta-calendar-day{min-height:105px}
+.fta-seo-progress{height:8px;border-radius:99px;background:#edf2f7;overflow:hidden;min-width:90px}
+.fta-seo-progress-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,#f59f3a,#ec5d25)}
+.fta-seo-progress-fill.good{background:linear-gradient(90deg,#46b982,#1d8f5b)}
+.fta-seo-checks{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.fta-seo-check{padding:3px 6px;border-radius:6px;background:#f1f4f7;color:#748297;font-size:9px;font-weight:750}
+.fta-seo-check.ok{background:#eaf8f0;color:#177b4b}
+.fta-seo-audit-row{cursor:pointer}
+.fta-seo-audit-row:hover{background:#fbfdff}
+.fta-google-connection{position:relative;overflow:hidden;padding:19px;border:1px solid #e0e8f2;border-radius:14px;background:linear-gradient(130deg,#fff,#f7faff)}
+.fta-google-connection:before{content:"";position:absolute;right:-38px;top:-38px;width:120px;height:120px;border-radius:50%;background:rgba(46,112,202,.06)}
+.fta-google-connection h3{position:relative;margin:8px 0 5px;font-size:15px;color:#1d3557}
+.fta-google-connection p{position:relative;margin:0;color:#6f7f94;font-size:11px;line-height:1.6}
+.fta-google-mark{display:grid;place-items:center;width:38px;height:38px;border-radius:11px;background:#fff;border:1px solid #e2eaf4;color:#326fc6;font-size:13px;font-weight:900}
+.fta-seo-modal-detail{display:grid;gap:8px;margin-top:14px}
+.fta-seo-modal-line{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #eef2f6;font-size:11px}
+.fta-seo-modal-line:last-child{border-bottom:0}
+.fta-seo-modal-line b{color:#27384e}
+.fta-seo-modal-line span{color:#76869b;text-align:right}
+.fta-seo-modal-line.ok span{color:#198252;font-weight:800}
+.fta-seo-modal-line.warn span{color:#ae5f00;font-weight:800}
+.fta-seo-progress{min-width:65px}
+.fta-seo-modal-line{align-items:flex-start;flex-direction:column;gap:3px}
+.fta-seo-modal-line span{text-align:left}
+.fta-menu-toggle{display:grid;place-items:center}
+.fta-global-search{display:none}
+.fta-sidebar{display:flex!important;position:fixed;left:0;z-index:120;transform:translateX(-105%);width:260px!important;flex-basis:260px!important}
+.fta-sidebar.open{transform:translateX(0)}
+.fta-mobile-overlay{position:fixed;inset:0;background:rgba(15,23,42,.42);z-index:110}
+.fta-mobile-overlay.open{display:block}
+.fta-topbar{padding:0 13px}
+.fta-top-profile span{display:none}
+.fta-content,.fta-module{padding-left:13px!important;padding-right:13px!important}
+.fta-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.fta-module-head{align-items:flex-start;flex-direction:column}
+.fta-module-actions{width:100%}
+.fta-module-actions .fta-module-btn{flex:1}
+.fta-form-grid{grid-template-columns:1fr}
+.fta-form-field.full{grid-column:auto}
+.fta-breadcrumb strong");i&&(i.textContent={dashboard:"Dashboard",orders:"Orders",products:"Products",website:"Website Management",customers:"Customers",campaign:"FT Campaign",marketing:"Digital Marketing",shipping:"Shipping",payments:"Payments",reports:"Reports",settings:"Settings"}
+.fta-module-table th:nth-child(4),.fta-module-table td:nth-child(4){display:none}
+.fta-sidebar"),Mt=a("#ftaMobileOverlay"),Lt=a("#ftaMenuToggle");function Tt(){Pt&&Pt.classList.remove("open"),Mt&&Mt.classList.remove("open")}
+.fta-nav-item").forEach((function(t){t.addEventListener("click",Tt)}
