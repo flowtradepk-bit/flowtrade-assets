@@ -33,7 +33,7 @@
   }
   function orderId() {
     var d = new Date(), pad = function (n) { return String(n).padStart(2, '0'); };
-    return 'FT-' + d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate()) + String(d.getTime() % 1000000).padStart(6, '0');
+    return 'FT-' + d.getFullYear() + pad(d.getMonth() + 1) + pad(d.getDate()) + '-' + String(d.getTime() % 1000000).padStart(6, '0');
   }
   function selectedItems() {
     var params = new URLSearchParams(location.search);
